@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Graph Image Downloader",
+  "version": "0.1",
+  "description": "Perform a graph search. After the page is loaded, click on the extension icon.",
+
+  "icons": {
+    "128" : "icon-128.png"
+  },
+
+  "browser_action": {
+	"default_icon": "icon-128.png"
+  },
+
+  "background": { "page": "background.html" },
+  "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+
+  "web_accessible_resources": [ "contentscript.js" ]
+}
